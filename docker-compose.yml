@@ -1,0 +1,13 @@
+version: "2.0"
+
+services:
+    nodeserver: 
+        build: ./server/
+    client:
+        depends_on: 
+            - nodeserver
+        build: ./client/
+        ports:
+            - 80:80
+        volumes:
+            - ./client/html:/var/www/html
