@@ -1,6 +1,6 @@
 # Sample for working with NGINX and Docker
 
-This sample demonstrates NGINX with a reverse proxy to Node.js backened service.
+This sample demonstrates NGINX with a reverse proxy to Node.js backend service.
 
 The Docker-compose file contains two images: one for frontend (html/js/images), one for backend (Node.js).
 
