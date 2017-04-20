@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-  res.send('Hello World root!')
+  res.send('Hello World root!' + JSON.stringify(req.headers))
 })
 
 app.get('/hoho', function (req, res) {
